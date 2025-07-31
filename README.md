@@ -1,6 +1,6 @@
 # NoCode-bench Experiments
 
-This repository contains records of submissions to the [SWE-bench](https://swe-bench.github.io/) leaderboard.
+This repository contains records of submissions to the [NoCode-bench](https://github.com/ZJU-CTAG/NoCode-bench/) leaderboard.
 
 <details>
 <summary>How is this repository organized?</summary>
@@ -42,7 +42,7 @@ You can omit `--target_folder` to download all files from the selected repo.
 Remove `--no_unzip` if you want zip files to be extracted automatically.
 
 ## 🏆 Leaderboard Participation
-To evaluate on NoCode-bench, check out the [main repository]() for instructions.
+To evaluate on NoCode-bench, check out the [main repository](https://github.com/ZJU-CTAG/NoCode-bench) for instructions.
 Please follow these instructions carefully to ensure your submission is merged on time!
 
 ### NoCode-bench [Full, Verified]
