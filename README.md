@@ -71,10 +71,21 @@ If you are interested in receiving the "verified" checkmark on your submission, 
 3. We will run your model on a random subset of NoCode-bench and verify the results.
 
 ## 📞 Contact
-Questions? Please create an issue or email to **dengle@zju.edu.cn** or **zhonghao.j@zju.edu.cn**.
+Questions? Please create an issue or email to **dengle@zju.edu.cn**, **zhonghao.j@zju.edu.cn** or **liu_zx@zju.edu.cn**.
 
 ## ✍️ Citation
 If you found this repository helpful or are citing the numbers on the leaderboard for academic purposes, please use cite [NoCode-bench](https://arxiv.org/pdf/2507.18130).
+```
+@misc{deng2025nocodebenchbenchmarkevaluatingnatural,
+      title={NoCode-bench: A Benchmark for Evaluating Natural Language-Driven Feature Addition}, 
+      author={Le Deng and Zhonghao Jiang and Jialun Cao and Michael Pradel and Zhongxin Liu},
+      year={2025},
+      eprint={2507.18130},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2507.18130}, 
+}
+```
 
 ## 📜 Acknowledgements
-This repository is part of the [SWE-bench](https://swe-bench.github.io/) project.
+This repository partly depends on [SWE-bench](https://swe-bench.github.io/) project.
