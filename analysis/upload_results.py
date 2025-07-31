@@ -23,7 +23,6 @@ def upload_files_to_hf(local_path, repo_id, repo_type, target_folder=None, zip_m
     if not os.path.exists(local_path):
         return
 
-    # 如果需要打包成zip
     if zip_mode:
         dir_name = os.path.basename(os.path.normpath(local_path))
         temp_zip = tempfile.NamedTemporaryFile(delete=False, suffix=".zip").name

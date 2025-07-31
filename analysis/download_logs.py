@@ -34,10 +34,6 @@ def download_from_hf(repo_id, repo_type, target_folder=None, local_dir="./downlo
 
 
 def main(args):
-    # token = os.environ.get("HF_TOKEN")
-    # if not token:
-    #     return
-    # login(token)
 
     if args.logs:
         download_from_hf(

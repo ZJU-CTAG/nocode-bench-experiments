@@ -30,10 +30,16 @@ These logs are publicly accessible and meant to enable greater reproducibility a
 ## 🔎 Viewing Logs, Trajectories
 You can download the logs and trajectories for each submission by running the following command to download the data:
 ```bash
-python -m analysis.download_logs evaluation/<split>/<date + model>
-python -m analysis.download_logs evaluation/lite/20231010_rag_claude2
+python analysis.download_logs.py \
+    --logs \  # Download from Logs repo (use --trajs to download from Trajs repo instead)
+    --target_folder test_case_1 \  # <name_of_the_folder_inside_repo_to_download>
+    --local_dir ./downloads \  # <path_to_local_output_directory>
+    --no_unzip  # (optional) Skip unzipping .zip files after download
 ```
-Logs and trajectories are saved to a public S3 Bucket. *You need an AWS account to download the logs and trajectories*. Namely, you'll need to create an [AWS account](https://aws.amazon.com/), download the [AWS CLI](https://aws.amazon.com/cli/), and [configure the CLI with your credentials](https://docs.aws.amazon.com/signin/latest/userguide/command-line-sign-in.html).
+
+Replace `--logs` with `--trajs` if you want to download trajectories instead of logs.
+You can omit `--target_folder` to download all files from the selected repo.
+Remove `--no_unzip` if you want zip files to be extracted automatically.
 
 ## 🏆 Leaderboard Participation
 To evaluate on NoCode-bench, check out the [main repository]() for instructions.
@@ -65,10 +71,10 @@ If you are interested in receiving the "verified" checkmark on your submission, 
 3. We will run your model on a random subset of NoCode-bench and verify the results.
 
 ## 📞 Contact
-Questions? Please create an issue. 
+Questions? Please create an issue or email to **dengle@zju.edu.cn** or **zhonghao.j@zju.edu.cn**.
 
 ## ✍️ Citation
-If you found this repository helpful or are citing the numbers on the leaderboard for academic purposes, please use cite [NoCode-bench]().
+If you found this repository helpful or are citing the numbers on the leaderboard for academic purposes, please use cite [NoCode-bench](https://arxiv.org/pdf/2507.18130).
 
 ## 📜 Acknowledgements
-This repository is part of the [SWE-bench](https://swe-bench.github.io/) project, and the leaderboard is a modified version of SWE-bench GitHub Pages.
+This repository is part of the [SWE-bench](https://swe-bench.github.io/) project.
