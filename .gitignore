@@ -7,8 +7,9 @@ __pycache__/
 keys.cfg
 data.json
 
-archive/
-notebooks/
+evaluation/full/*/logs/
+evaluation/full/*/trajs/
 
-analysis/update_submission.py
-analysis/upload_logs.py
+evaluation/verified/*/logs/
+evaluation/verified/*/trajs/
+
