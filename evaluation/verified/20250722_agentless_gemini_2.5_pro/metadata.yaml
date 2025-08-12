@@ -1,0 +1,16 @@
+assets:
+  logs:
+  trajs:
+info:
+  logo: https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png
+  name: Agentless-1.5
+  site: https://github.com/OpenAutoCoder/Agentless
+tags:
+  checked: false
+  model:
+  - gemini-2.5-pro
+  org: Agentless
+  os_model: false
+  os_system: true
+  system:
+    attempts: 2+
